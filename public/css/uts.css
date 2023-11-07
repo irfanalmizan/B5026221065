@@ -1,0 +1,306 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: white;
+}
+h5 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 800;
+    margin-top: -24px;
+}
+h3 {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 800;
+    color: #6f1d1b;
+}
+h4 {
+    margin-top: 18px;
+    font-family: Poppins;
+    color: #6f1d1b;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* TOMBOL */
+.tombol {
+    font-family: Montserrat;
+    color: #ffe6a7;
+    background-color: #6f1d1b;
+    text-transform: uppercase;
+    border-radius: 7px;
+}
+.tombol-2 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    color: #6f1d1b;
+    background-color: #ffe6a7;
+    border-radius: 7px;
+}
+.tombol-3 {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: #bb9457;
+    width: 100px;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c1a0f;
+}
+
+.nav-link {
+    font-family: Poppins;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+/* JUMBOTRON */
+:root {
+    --gradient: linear-gradient(to right, #bb9457, #432818);
+    height: 524px;
+}
+
+.jumbotron {
+    background-image: var(--gradient);
+    background-size: 200%;
+    background-position: right;
+    animation: gradient-animation 5s infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.jumbotron .display-4 {
+    font-family: Montserrat;
+    color: #2c1a0f;
+    text-align: left;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.jumbotron .lead {
+    color: #2c1a0f;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sampul {
+    margin-top: 130px;
+}
+
+.sampul img {
+    width: 480px;
+    height: 600px;
+}
+
+/* SHOP */
+.shop .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.333%;
+}
+.shop .col-md-4 img {
+    width: 320px;
+    border-radius: 20px;
+}
+.container .row {
+    margin-top: 52px;
+}
+.container .row .nama-harga {
+    margin-top: 20px;
+}
+.container .text-left p {
+    font-family: Poppins;
+    font-size: 20px;
+}
+.container .text-left h4 {
+    margin-top: -13px;
+    font-family: Montserrat;
+}
+
+/* GALLERY */
+.container-fluid {
+    background-image: url(../gambar/thumbnail.png);
+    background-size: cover;
+    height: 304px;
+    background-position: 0px -210px;
+}
+.container-fluid h2 {
+    font-family: Montserrat;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 68px;
+}
+.fa-solid {
+    padding: 45px;
+    color: white;
+}
+.container-fluid .text-center p {
+    font-family: Poppins;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -7px;
+}
+.row-gallery img {
+    border-radius: 20px;
+}
+.col-md-4 .card {
+    border: 0;
+}
+
+/*  */
+.card {
+    margin: 0 0.5em;
+    border: 0;
+    border-radius: 20px;
+}
+.carousel-inner {
+    display: flex;
+    margin: 1em;
+}
+.carousel-item {
+    display: block;
+    flex: 0 0 calc(100% / 3);
+    margin-right: 0;
+}
+.carousel-item img {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+/*  */
+
+/* COLLECTION */
+.page-section {
+    margin-top: 100px;
+    padding: 100px;
+    background-color: #ffe6a7;
+}
+.page-section .page-section-heading {
+    font-family: Montserrat;
+    color: #6f1d1b;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 91px;
+}
+.caption p {
+    font-family: Poppins;
+    color: #6f1d1b;
+    font-size: 12px;
+    font-weight: 400;
+}
+.collection img {
+    width: 100%;
+}
+.collection .card {
+    border-radius: 20px;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* ABOUT */
+.about-ornav {
+    margin-bottom: 333px;
+}
+.about-us h1 {
+    margin-top: 333px;
+    color: black;
+    font-family: Poppins;
+    font-size: 200px;
+    font-weight: 600;
+}
+
+.about-us h3 {
+    margin-top: 333px;
+    color: #432818;
+    font-family: Montserrat;
+    font-size: 64px;
+}
+
+.about-us p {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #432818;
+}
+
+/* CONTACT */
+.row .col-md-6 img {
+    width: 100%;
+}
+.contact {
+    background-color: #ffe6a7;
+}
+.contact h3 {
+    margin-top: 147px;
+    margin-bottom: 40px;
+}
+label {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6f1d1b;
+}
+.form-group {
+    margin-left: 25%;
+    width: 50%;
+    border: 0;
+    border-radius: 20px;
+}
+.form-control {
+    display: block;
+    border-color: #6f1d1b;
+    border-radius: 10px;
+}
+.contact .tombol {
+    margin-top: 23px;
+}
+.contact p {
+    margin-top: 51px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        color: #ffe6a7 !important;
+    }
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #6f1d1b;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -80px;
+        height: 1024px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 70px;
+        margin-top: 215px;
+    }
+}
