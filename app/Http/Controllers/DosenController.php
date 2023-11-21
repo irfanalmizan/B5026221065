@@ -22,4 +22,29 @@ class DosenController extends Controller
         $umur = 20;
         return view('biodata', ['nama' => $nama, 'alamat' => $alamat, 'umur' => $umur]);
     }
+
+    public function formulir()
+    {
+        return view('formulir');
+    }
+
+    public function proses(Request $request)
+    {
+        $nama = $request->input('nama');
+        $alamat = $request->input('alamat');
+        $nrp = $request->input('nrp');
+        return " Anda telah mengisikan <br>Nama : " . $nama . ", Alamat : " . $alamat . ", NRP : " . $nrp . "<br>" . $request;
+    }
+
+    public function showjam($jam)
+    { //Parameter function berupa primitif dan data type
+        return "<h2>Sekarang Jam : " . $jam . "<h2>";
+    }
+
+    public function hitungLingkaran($jariJari)
+    {
+        $luas = pi() * pow($jariJari, 2);
+        $keliling = 2 * pi() * $jariJari;
+        return view('hitungLingkaran', ['jariJari' => $jariJari, 'luas' => $luas, 'keliling' => $keliling]);
+    }
 }
