@@ -33,6 +33,8 @@ Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
 
+Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
+
 Route::get('linktree', function () {
     return view('bsm');
 });
@@ -72,3 +74,4 @@ Route::get('contact-form', function () {
 Route::get('blog', function () {
     return view('blog');
 });
+
