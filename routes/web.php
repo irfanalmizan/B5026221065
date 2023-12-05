@@ -35,6 +35,13 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/display/{id}','App\Http\Controllers\PegawaiController@display');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
+//Route CR Nilai Kuliah
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@indexnilai');
+Route::get('/nilaikuliah/tambahnilai','App\Http\Controllers\NilaiController@tambahnilai');
+Route::post('/nilaikuliah/storenilai','App\Http\Controllers\NilaiController@storenilai');
+
+
+
 Route::get('linktree', function () {
     return view('bsm');
 });
