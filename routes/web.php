@@ -40,6 +40,20 @@ Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@indexnilai');
 Route::get('/nilaikuliah/tambahnilai','App\Http\Controllers\NilaiController@tambahnilai');
 Route::post('/nilaikuliah/storenilai','App\Http\Controllers\NilaiController@storenilai');
 
+//Route CR Kertas HVS
+Route::get('/kertashvs','App\Http\Controllers\KertasController@indexkertas');
+Route::get('/kertashvs/tambahkertas','App\Http\Controllers\KertasController@tambahkertas');
+Route::post('/kertashvs/storekertas','App\Http\Controllers\KertasController@storekertas');
+Route::get('/kertashvs/editkertas/{id}','App\Http\Controllers\KertasController@editkertas');
+Route::post('/kertashvs/updatekertas','App\Http\Controllers\KertasController@updatekertas');
+Route::get('/kertashvs/displaykertas/{id}','App\Http\Controllers\KertasController@displaykertas');
+Route::get('/kertashvs/hapuskertas/{id}','App\Http\Controllers\KertasController@hapuskertas');
+
+//Route CR
+Route::get('/belanja','App\Http\Controllers\BelanjaController@indexbelanja');
+Route::get('/belanja/tambahbelanja','App\Http\Controllers\BelanjaController@tambahbelanja');
+Route::post('/belanja/storebelanja','App\Http\Controllers\BelanjaController@storebelanja');
+Route::get('/belanja/hapusbelanja/{id}','App\Http\Controllers\BelanjaController@hapusbelanja');
 
 
 Route::get('linktree', function () {
