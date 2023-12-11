@@ -30,7 +30,7 @@ class ChatController extends Controller
 
         foreach ($arrayKata as &$kata) {
             if (array_key_exists($kata, $emotGambar)) {
-                $kata = '<img src="' . asset('gambar/' . $emotGambar[$kata]) . '" alt="' . $kata . '">';
+                $kata = '<img src="' . asset('gambar/' . $emotGambar[$kata]) . '" alt="' . $kata . '" style="width: 30px; height: auto;">';
             }
         }
 

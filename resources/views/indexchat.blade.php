@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Kertas HVS')
+@section('title', 'Pesan Emot')
 
 @section('konten')
     <h2>www.malasngoding.com</h2>
