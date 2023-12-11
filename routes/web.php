@@ -48,12 +48,19 @@ Route::get('/kertashvs/editkertas/{id}','App\Http\Controllers\KertasController@e
 Route::post('/kertashvs/updatekertas','App\Http\Controllers\KertasController@updatekertas');
 Route::get('/kertashvs/displaykertas/{id}','App\Http\Controllers\KertasController@displaykertas');
 Route::get('/kertashvs/hapuskertas/{id}','App\Http\Controllers\KertasController@hapuskertas');
+Route::get('/kertashvs/carikertas','App\Http\Controllers\KertasController@carikertas');
+
 
 //Route CR
 Route::get('/belanja','App\Http\Controllers\BelanjaController@indexbelanja');
 Route::get('/belanja/tambahbelanja','App\Http\Controllers\BelanjaController@tambahbelanja');
 Route::post('/belanja/storebelanja','App\Http\Controllers\BelanjaController@storebelanja');
 Route::get('/belanja/hapusbelanja/{id}','App\Http\Controllers\BelanjaController@hapusbelanja');
+
+//Route CRUD CHAT
+Route::get('/chat','App\Http\Controllers\ChatController@indexchat');
+// Route::post('/chat/konversi','App\Http\Controllers\ChatController@konversiEmotKeGambar');
+
 
 
 Route::get('linktree', function () {

@@ -82,15 +82,15 @@ class KertasController extends Controller{
     public function carikertas(Request $request)
 	{
 		// menangkap data pencarian
-		$cari = $request->cari;
+		$carikertas = $request->carikertas;
 
-    		// mengambil data dari table pegawai sesuai pencarian data
-		$pegawai = DB::table('pegawai')
-                ->where('pegawai_nama','like',"%".$cari."%")
-		        ->paginate();
+    		// mengambil data dari table kertashvs sesuai pencarikertasan data
+		$kertashvs = DB::table('kertashvs')
+                ->where('merkkertashvs','like',"%".$carikertas."%")
+                ->get();
 
-    		// mengirim data pegawai ke view index
-		return view('index',['pegawai' => $pegawai, 'cari' => $cari]);
+    		// mengirim data kertashvs ke view index
+		return view('indexkertas',['kertashvs' => $kertashvs, 'carikertas' => $carikertas]);
 
 	}
 }

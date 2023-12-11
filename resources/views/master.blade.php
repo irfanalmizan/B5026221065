@@ -28,12 +28,15 @@
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
+        TUGAS PWEB
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+        <a class="dropdown-item" href="/pegawai">Pegawai</a>
+        <a class="dropdown-item" href="/belanja">Keranjang Belanja</a>
+        <a class="dropdown-item" href="/kertashvs">Kertas HVS</a>
+        <a class="dropdown-item" href="/nilaikuliah">Nilai Kuliah</a>
+        <a class="dropdown-item" href="/chat">Pesan Emot</a>
+
       </div>
     </li>
   </ul>

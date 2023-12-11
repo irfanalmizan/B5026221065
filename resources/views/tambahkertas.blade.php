@@ -30,11 +30,11 @@
             <label for="tersedia" class="col-xl-2 col-form-label">Tersedia</label>
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="tersedia1" name="tersedia" value="Y" checked>
-                <label class="custom-control-label" for="tersedia1">Y</label>
+                <label class="custom-control-label" for="tersedia1">Tersedia</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="tersedia2" name="tersedia" value="N">
-                <label class="custom-control-label" for="tersedia2">N</label>
+                <label class="custom-control-label" for="tersedia2">Tidak Tersedia</label>
               </div>
         </div>
         <input type="submit" value="Simpan Data">

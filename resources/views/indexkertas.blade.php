@@ -9,6 +9,13 @@
     <a href="/kertashvs/tambahkertas" class="btn btn-primary"> + Tambah Kertas</a>
 
     <br />
+    <p>Cari Data Kertas berdasarkan nama :</p>
+    <form action="/kertashvs/carikertas" method="GET">
+        <input class="form-control" type="text" name="carikertas" placeholder="Cari Kertas HVS .."
+            value="{{ old('carikertas', isset($carikertas) ? $carikertas : '') }}">
+        <input class="btn btn-primary" type="submit" value="CARI">
+    </form>
+    <br />
 
     <table class="table table-striped table-hover">
         <tr>
